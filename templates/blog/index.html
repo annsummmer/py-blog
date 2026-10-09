@@ -16,6 +16,7 @@
           <td class="col-6">Content</td>
           <td>Date</td>
           <td>Author</td>
+          <td>Comment Count</td>
         </tr>
       </thead>
       <tbody>
@@ -25,6 +26,7 @@
             <td class="col-6">{{ post.content }}</td>
             <td>{{ post.created_time }}</td>
             <td>{{ post.owner }}</td>
+            <td>{{ post.commentaries.count }}</td>
           </tr>
         {% endfor %}
       </tbody>
